@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Product","GET - As admin I have be able to get all products","SUCCESS","2023-05-08T15:51:54.645357686+07:00[Asia/Jakarta]","0.0","11.13"
+"Product","POST - As admin I have be able to create a new product","SUCCESS","2023-05-08T15:52:05.791029539+07:00[Asia/Jakarta]","0.0","0.98"
