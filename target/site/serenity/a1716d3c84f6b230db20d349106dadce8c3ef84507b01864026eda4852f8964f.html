@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>POST - As admin I have be able to assign a rating</title>
+    <title>GET - As user I have be able to register</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -120,7 +120,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > POST - As admin I have be able to assign a rating
+        > GET - As user I have be able to register
         </span>
         </div>
         <div class="rightbg"></div>
@@ -153,7 +153,7 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
-                                        <span class="story-header-title">Product</span>
+                                        <span class="story-header-title">Auth</span>
                                     </h3>
                                 </div>
 
@@ -172,7 +172,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    POST - As admin I have be able to assign a rating
+                                    GET - As user I have be able to register
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -226,7 +226,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                Given I set POST api endpoint for assign rating
+                                                Given I set POST api endpoint for register
                                         </span>
                             </a>
                             <span class="evidence">
@@ -235,7 +235,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">011ms</span></td>
+                    <td width="100"><span class="top-level-step">305ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -252,7 +252,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set POST api endpoint for assign rating
+                                                I set POST api endpoint for register
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -260,7 +260,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step"></span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
 
                             </table>
@@ -282,7 +282,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                When I send POST request for assign rating
+                                                When I send POST HTTP request for register
                                         </span>
                             </a>
                             <span class="evidence">
@@ -291,7 +291,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">301ms</span></td>
+                    <td width="100"><span class="top-level-step">3s 142ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -312,7 +312,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                I send POST request for assign rating
+                                                I send POST HTTP request for register
                                         </span>
                             </a>
                             <span class="evidence">
@@ -321,7 +321,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">299ms</span></td>
+                    <td width="100"><span class="nested-step">3s 138ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -338,38 +338,9 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                POST https://altashop-api.fly.dev/api/auth/login
+                                                I set POST api endpoint for register
                                         </span>
                             <span class="evidence">
-                                        <span class="piece-of-evidence">
-                <span>
-                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
-                                data-target="#restModal-REST-5">
-                            REST Query
-                        </button>
-                    </span>
-                <!-- Modal -->
-                <div class="rest-query-details">
-                    <div class="collapse multi-collapse" id="restModal-REST-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4>Response</h4>
-                                    <p>URL: https://altashop-api.fly.dev/api/auth/login</p>
-                                    <p>Status code: 200</p>
-                                    <p>Content Type: application/json</p>
-                                    <h4>Request Headers</h4>
-                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
-                                    <h4>Content Body</h4>
-                                    <pre>{<br>    &quot;password&quot;: &quot;123123&quot;,<br>    &quot;email&quot;: &quot;ganti@mail.com&quot;<br>}</pre>
-                                    <h4>Response Headers</h4>
-                                    <pre>content-type: application/json<br>date: Tue, 09 May 2023 03:00:22 GMT<br>content-encoding: gzip<br>transfer-encoding: chunked<br>server: Fly/3f2597ca (2023-05-03)<br>via: 1.1 fly.io<br>fly-request-id: 01GZZ77TGMJT1WZKAJRF0Z81T1-sin</pre>
-                                <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;data&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoiZ2FudGlAbWFpbC5jb20ifQ.D9yGzNTnYCY85RF88y2UKku2sizXQXcrsOm5PNUWioQ&quot;<br>}</pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                                        </span>
                                 </span>
                         </div>
                     </td>
@@ -389,55 +360,33 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set POST api endpoint for assign rating
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="1-0-2"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                POST https://altashop-api.fly.dev/api/products/14482/ratings
+                                                POST https://altashop-api.fly.dev/api/auth/register
                                         </span>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
                 <span>
                         <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
-                                data-target="#restModal-REST-7">
+                                data-target="#restModal-REST-6">
                             REST Query
                         </button>
                     </span>
                 <!-- Modal -->
                 <div class="rest-query-details">
-                    <div class="collapse multi-collapse" id="restModal-REST-7">
+                    <div class="collapse multi-collapse" id="restModal-REST-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4>Response</h4>
-                                    <p>URL: https://altashop-api.fly.dev/api/products/14482/ratings</p>
+                                    <p>URL: https://altashop-api.fly.dev/api/auth/register</p>
                                     <p>Status code: 200</p>
                                     <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
-                                    <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoiZ2FudGlAbWFpbC5jb20ifQ.D9yGzNTnYCY85RF88y2UKku2sizXQXcrsOm5PNUWioQ<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
-                                    <pre>{<br>    &quot;count&quot;: 4<br>}</pre>
+                                    <pre>{<br>    &quot;password&quot;: &quot;play has no limits&quot;,<br>    &quot;fullname&quot;: &quot;orang pintar&quot;,<br>    &quot;email&quot;: &quot;orang@mail.com&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>content-type: application/json<br>date: Tue, 09 May 2023 03:00:22 GMT<br>content-encoding: gzip<br>transfer-encoding: chunked<br>server: Fly/3f2597ca (2023-05-03)<br>via: 1.1 fly.io<br>fly-request-id: 01GZZ77TN92ZDXMQ8KNX305J33-sin</pre>
+                                    <pre>content-type: application/json<br>date: Tue, 09 May 2023 03:00:19 GMT<br>content-encoding: gzip<br>transfer-encoding: chunked<br>server: Fly/3f2597ca (2023-05-03)<br>via: 1.1 fly.io<br>fly-request-id: 01GZZ77QG2BK3ZZMTW26ASSPJY-sin</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;ID&quot;: 14482,<br>        &quot;Name&quot;: &quot;description&quot;,<br>        &quot;Description&quot;: &quot;&quot;,<br>        &quot;Price&quot;: 0,<br>        &quot;Ratings&quot;: 4,<br>        &quot;Categories&quot;: [<br>            <br>        ]<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;ID&quot;: 21710,<br>        &quot;Fullname&quot;: &quot;orang pintar&quot;,<br>        &quot;Email&quot;: &quot;orang@mail.com&quot;,<br>        &quot;Password&quot;: &quot;play has no limits&quot;<br>    }<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -474,7 +423,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                Then I receive valid HTTP response code 200
+                                                Then I receive valid data for new user
                                         </span>
                             </a>
                             <span class="evidence">
@@ -483,7 +432,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">003ms</span></td>
+                    <td width="100"><span class="top-level-step">1s 556ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -500,7 +449,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I receive valid HTTP response code 200
+                                                I receive valid data for new user
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -508,7 +457,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="100"><span class="nested-group-step">1s 551ms</span></td>
                 </tr>
 
                             </table>
@@ -517,7 +466,7 @@
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>0.33s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>5.1s</em></span></td>
             </tr>
 
         </table>
