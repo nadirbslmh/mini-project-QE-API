@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import starter.product.Get;
 import starter.product.Post;
+import starter.product.PostRating;
 
 public class ProductSteps {
     @Steps
@@ -14,6 +15,9 @@ public class ProductSteps {
 
     @Steps
     Post post;
+
+    @Steps
+    PostRating postRating;
 
     @Given("I set GET api endpoint")
     public void setGetApiEndpoints() {
@@ -43,5 +47,15 @@ public class ProductSteps {
     @And("I receive valid data for new product")
     public void validateDataNewProduct() {
         post.validateDataNewProduct();
+    }
+
+    @Given("I set POST api endpoint for assign rating")
+    public void setPostApiEndpointRating() {
+        postRating.setPostApiEndpointRating();
+    }
+
+    @When("I send POST request for assign rating")
+    public void sendPostHttpRequestRating() {
+        postRating.sendPostHttpRequestRating();
     }
 }

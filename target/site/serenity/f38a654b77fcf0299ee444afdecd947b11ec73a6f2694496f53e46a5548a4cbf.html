@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>POST - As admin I have be able to create a new product</title>
+    <title>POST - As admin I have be able to assign a rating</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -120,7 +120,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > POST - As admin I have be able to create a new product
+        > POST - As admin I have be able to assign a rating
         </span>
         </div>
         <div class="rightbg"></div>
@@ -172,7 +172,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    POST - As admin I have be able to create a new product
+                                    POST - As admin I have be able to assign a rating
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -226,7 +226,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                Given I set POST api endpoint
+                                                Given I set POST api endpoint for assign rating
                                         </span>
                             </a>
                             <span class="evidence">
@@ -235,7 +235,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">021ms</span></td>
+                    <td width="100"><span class="top-level-step">018ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -252,7 +252,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set POST api endpoint
+                                                I set POST api endpoint for assign rating
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -282,7 +282,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                When I send POST HTTP request
+                                                When I send POST request for assign rating
                                         </span>
                             </a>
                             <span class="evidence">
@@ -291,7 +291,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">186ms</span></td>
+                    <td width="100"><span class="top-level-step">355ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -312,7 +312,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                I send POST HTTP request
+                                                I send POST request for assign rating
                                         </span>
                             </a>
                             <span class="evidence">
@@ -321,7 +321,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">183ms</span></td>
+                    <td width="100"><span class="nested-step">350ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -338,9 +338,38 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set POST api endpoint
+                                                POST https://altashop-api.fly.dev/api/auth/login
                                         </span>
                             <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-5">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://altashop-api.fly.dev/api/auth/login</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;password&quot;: &quot;123123&quot;,<br>    &quot;email&quot;: &quot;ganti@mail.com&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>content-type: application/json<br>date: Tue, 09 May 2023 02:40:12 GMT<br>content-encoding: gzip<br>transfer-encoding: chunked<br>server: Fly/3f2597ca (2023-05-03)<br>via: 1.1 fly.io<br>fly-request-id: 01GZZ62X4YMRCKG1R8NT9MRYKP-sin</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;data&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoiZ2FudGlAbWFpbC5jb20ifQ.D9yGzNTnYCY85RF88y2UKku2sizXQXcrsOm5PNUWioQ&quot;<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
                                 </span>
                         </div>
                     </td>
@@ -360,33 +389,55 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                POST https://altashop-api.fly.dev/api/products
+                                                I set POST api endpoint for assign rating
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="1-0-2"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://altashop-api.fly.dev/api/products/14482/ratings
                                         </span>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
                 <span>
                         <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
-                                data-target="#restModal-REST-6">
+                                data-target="#restModal-REST-7">
                             REST Query
                         </button>
                     </span>
                 <!-- Modal -->
                 <div class="rest-query-details">
-                    <div class="collapse multi-collapse" id="restModal-REST-6">
+                    <div class="collapse multi-collapse" id="restModal-REST-7">
                         <div class="card">
                             <div class="card-body">
                                 <h4>Response</h4>
-                                    <p>URL: https://altashop-api.fly.dev/api/products</p>
+                                    <p>URL: https://altashop-api.fly.dev/api/products/14482/ratings</p>
                                     <p>Status code: 200</p>
                                     <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
-                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoiZ2FudGlAbWFpbC5jb20ifQ.D9yGzNTnYCY85RF88y2UKku2sizXQXcrsOm5PNUWioQ<br>Accept=*/*<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
-                                    <pre>{<br>    &quot;price&quot;: 299,<br>    &quot;name&quot;: &quot;Sony PS5 Slim&quot;,<br>    &quot;description&quot;: &quot;play has no limits&quot;,<br>    &quot;categories&quot;: [<br>        0<br>    ]<br>}</pre>
+                                    <pre>{<br>    &quot;count&quot;: 4<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>content-type: application/json<br>date: Tue, 09 May 2023 02:40:11 GMT<br>content-encoding: gzip<br>transfer-encoding: chunked<br>server: Fly/3f2597ca (2023-05-03)<br>via: 1.1 fly.io<br>fly-request-id: 01GZZ62WFD02084ZVF79WSGSHT-sin</pre>
+                                    <pre>content-type: application/json<br>date: Tue, 09 May 2023 02:40:12 GMT<br>content-encoding: gzip<br>transfer-encoding: chunked<br>server: Fly/3f2597ca (2023-05-03)<br>via: 1.1 fly.io<br>fly-request-id: 01GZZ62XAP81QPB0HYGNTNJMDN-sin</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;ID&quot;: 14620,<br>        &quot;Name&quot;: &quot;Sony PS5 Slim&quot;,<br>        &quot;Description&quot;: &quot;play has no limits&quot;,<br>        &quot;Price&quot;: 299,<br>        &quot;Ratings&quot;: 0,<br>        &quot;Categories&quot;: [<br>            <br>        ]<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;ID&quot;: 14482,<br>        &quot;Name&quot;: &quot;description&quot;,<br>        &quot;Description&quot;: &quot;&quot;,<br>        &quot;Price&quot;: 0,<br>        &quot;Ratings&quot;: 4,<br>        &quot;Categories&quot;: [<br>            <br>        ]<br>    }<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -432,7 +483,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">005ms</span></td>
+                    <td width="100"><span class="top-level-step">007ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -457,63 +508,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
-                </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="50" class="step-icon">
-                        <a name="3"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
-                               style="display:block">
-                                <i class="bi bi-plus-square imgstepSection3 success-icon"
-                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
-                               style="display:block;">
-                                <span class="top-level-step">
-                                                And I receive valid data for new product
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">468ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection3" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="70" class="step-icon">
-                        <a name="3-0"></a>
-                            <span style="margin-left: 40px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                I receive valid data for new product
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">465ms</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
 
                             </table>
@@ -522,7 +517,7 @@
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>0.69s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>0.39s</em></span></td>
             </tr>
 
         </table>

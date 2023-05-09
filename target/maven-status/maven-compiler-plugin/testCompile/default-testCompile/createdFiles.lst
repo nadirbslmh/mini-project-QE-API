@@ -1,4 +1,6 @@
 starter/product/Post.class
 starter/CucumberTestSuite.class
+starter/utils/GenerateToken.class
 starter/stepdefinitions/ProductSteps.class
 starter/product/Get.class
+starter/product/PostRating.class
