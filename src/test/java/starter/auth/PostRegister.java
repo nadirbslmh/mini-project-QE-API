@@ -19,9 +19,9 @@ public class PostRegister {
     public void sendPostHttpRequestRegister() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("email", "orang@mail.com");
+        requestBody.put("email", "sample@mail.com");
         requestBody.put("password","play has no limits");
-        requestBody.put("fullname","orang pintar");
+        requestBody.put("fullname","orang oke");
 
         SerenityRest.given()
                 .header("Content-Type","application/json")

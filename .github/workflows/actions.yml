@@ -14,12 +14,5 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-      - name: Build with Maven
+      - name: Build and Test with Maven
         run: mvn --batch-mode --update-snapshots verify
-
-  test:
-    name: TEST API
-    runs-on: ubuntu-latest
-    steps:
-      - name: TEST API
-        run: mvn clean verify
