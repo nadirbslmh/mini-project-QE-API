@@ -1,3 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Product","POST - As admin I have be able to create a new product","SUCCESS","2023-05-10T08:41:58.643780692+07:00[Asia/Jakarta]","0.0","0.52"
 "Product","POST - As admin I have be able to assign a rating","FAILURE","2023-05-10T08:41:59.200541971+07:00[Asia/Jakarta]","0.0","0.56"

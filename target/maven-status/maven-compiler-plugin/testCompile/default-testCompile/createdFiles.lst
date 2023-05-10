@@ -2,6 +2,7 @@ starter/product/Post.class
 starter/auth/PostRegister.class
 starter/CucumberTestSuite.class
 starter/utils/GenerateToken.class
+starter/utils/Faker.class
 starter/stepdefinitions/AuthSteps.class
 starter/stepdefinitions/ProductSteps.class
 starter/product/Get.class

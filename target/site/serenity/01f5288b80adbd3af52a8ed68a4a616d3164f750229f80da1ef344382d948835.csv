@@ -1,5 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Auth","GET - As user I have be able to register","SUCCESS","2023-05-09T10:00:15.71844233+07:00[Asia/Jakarta]","0.0","5.1"
-"Product","GET - As admin I have be able to get all products","SUCCESS","2023-05-09T10:00:20.863523029+07:00[Asia/Jakarta]","0.0","0.89"
-"Product","POST - As admin I have be able to create a new product","SUCCESS","2023-05-09T10:00:21.770052636+07:00[Asia/Jakarta]","0.0","0.25"
-"Product","POST - As admin I have be able to assign a rating","SUCCESS","2023-05-09T10:00:22.025805354+07:00[Asia/Jakarta]","0.0","0.33"
+"Auth","GET - As user I have be able to register","SUCCESS","2023-05-10T08:41:53.058641691+07:00[Asia/Jakarta]","0.0","4.45"
+"Product","GET - As admin I have be able to get all products","SUCCESS","2023-05-10T08:41:57.540595656+07:00[Asia/Jakarta]","0.0","1.07"
+"Product","POST - As admin I have be able to create a new product","SUCCESS","2023-05-10T08:41:58.643780692+07:00[Asia/Jakarta]","0.0","0.52"

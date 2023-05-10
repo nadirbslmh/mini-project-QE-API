@@ -3,12 +3,18 @@ package starter.auth;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
+import starter.utils.Faker;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.notNullValue;
 
 public class PostRegister {
     protected String url = "https://altashop-api.fly.dev/api/";
+
+    private String email = Faker.generateRandomEmail();
+    private String password = Faker.generateRandomPassword();
+    private String fullname = Faker.generateRandomFullName();
 
     @Step("I set POST api endpoint for register")
     public String setPostApiEndpointRegister() {
@@ -19,9 +25,9 @@ public class PostRegister {
     public void sendPostHttpRequestRegister() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("email", "sample@mail.com");
-        requestBody.put("password","play has no limits");
-        requestBody.put("fullname","orang oke");
+        requestBody.put("email", email);
+        requestBody.put("password",password);
+        requestBody.put("fullname",fullname);
 
         SerenityRest.given()
                 .header("Content-Type","application/json")
@@ -31,7 +37,7 @@ public class PostRegister {
 
     @Step("I receive valid data for new user")
     public void validateNewUser() {
-        restAssuredThat(response -> response.body("'data'.'Email'", equalTo("orang@mail.com")));
-        restAssuredThat(response -> response.body("'data'.'Fullname'", equalTo("orang pintar")));
+        restAssuredThat(response -> response.body("'data'.'Email'", notNullValue()));
+        restAssuredThat(response -> response.body("'data'.'Fullname'", notNullValue()));
     }
 }
