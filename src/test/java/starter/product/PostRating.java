@@ -5,13 +5,16 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
 import starter.utils.GenerateToken;
+import starter.utils.ProductGetter;
 
 public class PostRating {
     protected String url = "https://altashop-api.fly.dev/api/";
 
     @Step("I set POST api endpoint for assign rating")
     public String setPostApiEndpointRating() {
-        return url + "products/14482/ratings";
+        int productId = ProductGetter.getProductID();
+
+        return url + "products/" + productId + "/ratings";
     }
 
     @Step("I send POST request for assign rating")

@@ -6,4 +6,5 @@ starter/utils/Faker.class
 starter/stepdefinitions/AuthSteps.class
 starter/stepdefinitions/ProductSteps.class
 starter/product/Get.class
+starter/utils/ProductGetter.class
 starter/product/PostRating.class
