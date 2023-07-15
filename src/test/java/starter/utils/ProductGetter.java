@@ -5,8 +5,6 @@ import net.serenitybdd.rest.SerenityRest;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.List;
-
 public class ProductGetter {
     public static int getProductID() {
         ResponseBody productResponse = SerenityRest.given()

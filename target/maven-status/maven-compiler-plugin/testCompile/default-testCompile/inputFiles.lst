@@ -3,8 +3,9 @@
 /home/nadir/IdeaProjects/minproQE/src/test/java/starter/stepdefinitions/ProductSteps.java
 /home/nadir/IdeaProjects/minproQE/src/test/java/starter/product/Post.java
 /home/nadir/IdeaProjects/minproQE/src/test/java/starter/CucumberTestSuite.java
+/home/nadir/IdeaProjects/minproQE/src/test/java/starter/utils/FileUtil.java
 /home/nadir/IdeaProjects/minproQE/src/test/java/starter/stepdefinitions/AuthSteps.java
 /home/nadir/IdeaProjects/minproQE/src/test/java/starter/utils/ProductGetter.java
+/home/nadir/IdeaProjects/minproQE/src/test/java/starter/hooks/TestHook.java
 /home/nadir/IdeaProjects/minproQE/src/test/java/starter/utils/GenerateToken.java
-/home/nadir/IdeaProjects/minproQE/src/test/java/starter/utils/Faker.java
 /home/nadir/IdeaProjects/minproQE/src/test/java/starter/auth/PostRegister.java

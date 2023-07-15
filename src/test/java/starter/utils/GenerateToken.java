@@ -1,21 +1,25 @@
 package starter.utils;
 
+import com.github.javafaker.Faker;
 import io.restassured.response.ResponseBody;
 import net.serenitybdd.rest.SerenityRest;
 import org.json.JSONObject;
 
 public class GenerateToken {
     public static String generateToken() {
-        JSONObject loginRequestBody = new JSONObject();
+        JSONObject userData = FileUtil.getUser();
+        JSONObject requestBody = new JSONObject();
 
-        loginRequestBody.put("email","ganti@mail.com");
-        loginRequestBody.put("password","123123");
+        requestBody.put("email", userData.get("email"));
+        requestBody.put("password", userData.get("password"));
 
         ResponseBody loginResponse = SerenityRest.given()
                 .header("Content-Type", "application/json")
-                .body(loginRequestBody.toString())
+                .body(requestBody.toString())
                 .post("https://altashop-api.fly.dev/api/auth/login")
                 .body();
+
+        System.out.println("the token: " + loginResponse.asString());
 
         JSONObject loginResponseBody = new JSONObject(loginResponse.asString());
 

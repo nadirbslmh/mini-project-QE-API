@@ -1,3 +1,4 @@
+@Register
 Feature: Auth
   As a user
   I want to access online shop

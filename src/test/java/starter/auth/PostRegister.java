@@ -3,18 +3,13 @@ package starter.auth;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
-import starter.utils.Faker;
+import starter.utils.FileUtil;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 public class PostRegister {
     protected String url = "https://altashop-api.fly.dev/api/";
-
-    private String email = Faker.generateRandomEmail();
-    private String password = Faker.generateRandomPassword();
-    private String fullname = Faker.generateRandomFullName();
 
     @Step("I set POST api endpoint for register")
     public String setPostApiEndpointRegister() {
@@ -23,11 +18,7 @@ public class PostRegister {
 
     @Step("I send POST HTTP request for register")
     public void sendPostHttpRequestRegister() {
-        JSONObject requestBody = new JSONObject();
-
-        requestBody.put("email", email);
-        requestBody.put("password",password);
-        requestBody.put("fullname",fullname);
+        JSONObject requestBody = FileUtil.getUser();
 
         SerenityRest.given()
                 .header("Content-Type","application/json")
